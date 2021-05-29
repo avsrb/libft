@@ -8,6 +8,7 @@ t_list	*ft_lstnew(void *content)
 	if (!elem)
 		return (0);
 	elem->content = content;
+	content++;
 	elem->next = 0;
 	return (elem);
 }
